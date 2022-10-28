@@ -1,7 +1,7 @@
 * {
-  margin: 0px;
+	margin: 0px;
 	padding: 0px;
-  font-size: 15px;
+	font-size: 15px;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
 }
 
 div#root {
-  box-sizing: border-box;
+	box-sizing: border-box;
 	min-width: 100vw;
 	min-height: 100vh;
 	background-color: #D0D0D0;
@@ -20,5 +20,5 @@ div#root {
 	justify-content: center; //Centers horizontally
 
 	overflow: hidden;
+	overflow-y: scroll;
 }
-

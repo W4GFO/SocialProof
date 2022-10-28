@@ -11,13 +11,22 @@ type CardProps = {
 export const Card = ({userStatementIndex}: CardProps) => {
 	const cardData:CardData = Cards[userStatementIndex]
 
-	console.log(cardData.imgUrl)
+	const determineImage = () => {
+		switch(userStatementIndex) {
+			case 0:
+				return IMG_COLTON
+			case 1:
+				return IMG_IRENE
+			default:
+				return IMG_ANNE
+		}
+	}
 
 	return (
 		<>
 			<header className='card-header'>
 				<div className='user-display'>
-					<img src={IMG_ANNE} alt="User" />
+					<img src={determineImage()} alt="User" />
 					<div className='user-info'>
 						<h1>{cardData.custName}</h1>
 						<p>{cardData.title}</p>
