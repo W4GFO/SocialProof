@@ -1,0 +1,31 @@
+@import '../../AllComponentStyles.scss';
+
+.top-frame {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr;
+
+	grid-template-areas: 
+		"top-left"
+		"top-right";
+}
+
+.top-left-frame {
+	grid-area: top-left;
+	background-color: darkkhaki;
+}
+
+.top-right-frame {
+	grid-area: top-right;
+	background-color: cornflowerblue;
+}
+
+@media screen and (min-width:$MediaBreakPoint) {
+	.top-frame {
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr;
+
+		grid-template-areas: 
+			"top-left top-right";
+	}
+}

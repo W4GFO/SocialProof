@@ -1,0 +1,22 @@
+@import '../../AllComponentStyles.scss';
+
+.primary-frame {
+	width: 100%;
+
+	display: grid;
+
+	//Mobile specific
+	grid-template-rows: 1fr;
+
+	grid-template-areas: 
+		"upper"
+		"lower"
+	;
+}
+
+@media  screen and (min-width:$MediaBreakPoint) {
+	.primary-frame {
+		height: 100%;
+		grid-template-rows: 0.9fr 1.1fr;
+	}
+}

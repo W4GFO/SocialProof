@@ -1,0 +1,60 @@
+@import '../../AllComponentStyles.scss';
+
+.lower-frame {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
+
+	grid-template-areas: 
+		"card1"
+		"card2"
+		"card3"
+	;
+}
+
+.card-display {
+	border: 1px solid gray;	
+}
+
+/*
+// .card-one {
+// 	//background-color: lightyellow;
+// }
+
+// .card-two {
+// 	//background-color: paleturquoise;
+// }
+
+// .card-three {
+// 	//background-color: lightblue;
+// }
+*/
+
+@media screen and (min-width:$MediaBreakPoint) {
+	.lower-frame {
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+
+		grid-template-areas: 
+			"card1 card2 card3"
+		;
+	}
+
+	.card-display {
+		align-self: center;
+	}
+
+	.card-one {
+		align-self:flex-start;
+		margin-top: 10px;
+	}
+
+	.card-two {
+		align-self: center;
+	}
+
+	.card-three {
+		align-self: flex-end;
+		margin-bottom: 10px;
+	}
+}

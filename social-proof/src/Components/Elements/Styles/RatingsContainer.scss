@@ -1,0 +1,42 @@
+@import '../../AllComponentStyles.scss';
+
+.rating-container {
+	justify-self: center;
+	background-color: blue;
+
+	text-align: center;
+
+	//justify-items: center;
+	//align-items: center;
+	//justify-content: center;
+	//align-content: center;
+}
+
+.star-icon {
+	color: orange;
+	margin: 12px 4px 0px 0px;
+}
+
+
+@media screen and (min-width:$MediaBreakPoint) {
+	.rating-container {
+		width: 68%;
+		height: 40px;
+		background-color:bisque;
+	}
+
+	.rating-statement {
+		margin-left: 20px;
+		margin-bottom: 24px;
+	}
+
+	.ratings-top {
+		margin-left: 16px;
+		justify-self: start;
+	}
+
+	.ratings-bottom {
+		margin-right: 16px;
+		justify-self: end;
+	}
+}

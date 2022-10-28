@@ -1,0 +1,32 @@
+@import '../../AllComponentStyles.scss';
+
+.card-header {
+	//margin-top: -24px;
+	// margin-bottom: 0px;
+	// padding-top: 0px;
+	// padding-bottom: 0px;
+	//height: 100%;
+	background-color:cadetblue;
+}
+
+.card-header img {
+	margin-top: -25px;
+	display: inline-block;
+	border: 1px solid red;
+}
+
+.user-info {
+	display: inline-block;
+	border: 1px solid orange;
+}
+.user-info h1 {
+	display: inline;
+}
+
+.user-info p {
+	display: block;
+}
+
+.user-statement {
+	background-color: aquamarine;
+}

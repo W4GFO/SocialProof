@@ -1,0 +1,15 @@
+main {
+	width: 94vw;
+	height: 100vh;
+
+	border: 1px solid black;
+	background-color: #EAEAEA;
+	background-image: url("./Images/bg-pattern-bottom-desktop.svg");
+}
+
+@media screen and (min-width:701px)  {
+	main {
+		width: 80vw;
+		height: 70vh;
+	}
+}
