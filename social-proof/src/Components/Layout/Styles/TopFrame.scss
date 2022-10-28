@@ -12,12 +12,26 @@
 
 .top-left-frame {
 	grid-area: top-left;
-	background-color: darkkhaki;
 }
 
 .top-right-frame {
 	grid-area: top-right;
-	background-color: cornflowerblue;
+}
+
+.top-left-frame h1 {
+	font-size: 2.0em;
+	text-align: center;
+	color: $VeryDarkMagenta;
+	font-weight: $FontWeightLarge;
+
+	margin: 8px 12px 10px 12px;
+	padding: 24px 48px 12px 48px;
+}
+
+.top-left-frame p {
+	text-align: center;
+	color: $VeryDarkMagenta;
+	margin: 0px 12px 16px 12px;
 }
 
 @media screen and (min-width:$MediaBreakPoint) {
@@ -27,5 +41,18 @@
 
 		grid-template-areas: 
 			"top-left top-right";
+	}
+
+	.top-left-frame h1 {
+		text-align: left;
+		margin: 24px 200px 24px 24px;
+		padding: 0px 0px 0px 0px;
+	}
+
+	.top-left-frame p {
+		text-align: left;
+		margin-left: 24px;
+		margin-right: 40px;
+		line-height: 1.1em;
 	}
 }

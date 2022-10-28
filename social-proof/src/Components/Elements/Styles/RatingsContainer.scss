@@ -2,30 +2,34 @@
 
 .rating-container {
 	justify-self: center;
-	background-color: blue;
+	background-color: $LightGrayishMagenta;
 
 	text-align: center;
 
-	//justify-items: center;
-	//align-items: center;
-	//justify-content: center;
-	//align-content: center;
+	width: 92%;
 }
 
 .star-icon {
 	color: orange;
-	margin: 12px 4px 0px 0px;
+	margin: 6px 4px 0px 0px;
 }
 
+.rating-statement {
+	display: block;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	color: $VeryDarkMagenta;
+	font-weight: $FontWeightLarge;
+}
 
 @media screen and (min-width:$MediaBreakPoint) {
 	.rating-container {
 		width: 68%;
 		height: 40px;
-		background-color:bisque;
 	}
 
 	.rating-statement {
+		display: inline;
 		margin-left: 20px;
 		margin-bottom: 24px;
 	}
@@ -38,5 +42,9 @@
 	.ratings-bottom {
 		margin-right: 16px;
 		justify-self: end;
+	}
+
+	.star-icon {
+		margin-top: 12px;
 	}
 }

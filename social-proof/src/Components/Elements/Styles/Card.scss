@@ -1,32 +1,56 @@
 @import '../../AllComponentStyles.scss';
 
-.card-header {
-	//margin-top: -24px;
-	// margin-bottom: 0px;
-	// padding-top: 0px;
-	// padding-bottom: 0px;
-	//height: 100%;
-	background-color:cadetblue;
+// .card-header {
+
+// }
+
+.user-display {
+	width: 78%;
+	margin: 18px 0px 4px 16px;
 }
 
 .card-header img {
-	margin-top: -25px;
 	display: inline-block;
-	border: 1px solid red;
+
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
 }
 
 .user-info {
+	margin-left: 8px;
 	display: inline-block;
-	border: 1px solid orange;
 }
+
 .user-info h1 {
 	display: inline;
+	color: white;
+	font-size: 1.2em;
 }
 
 .user-info p {
 	display: block;
+	color: $SoftPink;
+	font-size: 1.1em;
+	margin-top: 4px;
 }
 
 .user-statement {
-	background-color: aquamarine;
+	margin: 8px 4px 8px 4px;
+	padding: 8px 4px 8px 4px;
+}
+
+.user-statement p {
+	color: white;
+	line-height: 1.15em;
+	margin: 8px 12px 16px 12px;
+	font-weight: $FontWeightMedium;
+}
+
+@media screen and (min-width:$MediaBreakPoint) {
+	.user-statement p {
+		line-height: 1.2em;
+		margin-top: 8px;
+		margin-bottom: 18px;
+	}
 }
