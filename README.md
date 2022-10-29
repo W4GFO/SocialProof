@@ -65,7 +65,7 @@ From the project directory, to open the project in a local browser you can run:
 
 	In the /src/Components/Elements/Styles/Card.scss
 
-	- On line 12, I'm trying to vertically center the image and the text for the user's portrate and their name.  However, nothing I seemed to do worked.
+	- On line 12, I'm trying to vertically center the image and the text for the user's portrait and their name.  However, nothing I seemed to do worked.
 	I wound up getting it to look decent by playing around with margin and padding but I don't this that's the best way and I'm just not certain what I'm missing. 
 
 ### `npm run build`
