@@ -1,0 +1,25 @@
+@import './Components/AllComponentStyles.scss';
+
+main {
+	width: 94vw;
+	height: 100vh;
+	margin-top: 12px;
+	margin-bottom: 8px;
+
+	background-color: #EAEAEA;
+	background-image: url("./Images/bg-pattern-bottom-desktop.svg");
+
+	font-family: 'League Spartan', 'Times New Roman', Times, serif;
+}
+
+@media screen and (min-width:701px)  {
+	main {
+		width: 80vw;
+		height: 70vh;
+
+		max-width: $MaxWidth;
+		max-height: $MaxHeight;
+
+		box-shadow: 10px 8px 15px gray;
+	}
+}

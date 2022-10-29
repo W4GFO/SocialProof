@@ -1,0 +1,69 @@
+@import '../../AllComponentStyles.scss';
+
+.lower-frame {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
+
+	grid-template-areas: 
+		"card1"
+		"card2"
+		"card3";
+}
+
+.card-display {
+	margin-left: 8px;
+	margin-right: 8px;
+	border-radius: $BorderRadius;
+	background-color: $VeryDarkMagenta;
+}
+
+.card-one {
+	justify-self: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.card-two {
+	justify-self: center;
+	margin-bottom: 10px;
+}
+
+.card-three {
+	justify-self: center;
+	margin-bottom: 0px;
+}
+
+@media screen and (min-width:$MediaBreakPoint) {
+	.lower-frame {
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+
+		grid-template-areas: 
+			"card1 card2 card3";
+	}
+
+	.card-display {
+		width: 96%;
+		align-self: center;
+	}
+
+	.card-one {
+		align-self:flex-start;
+		justify-self: center;
+
+		margin: 10px 0px 0px 10px;
+	}
+
+	.card-two {
+		align-self: center;
+		justify-self: center;
+		margin-bottom: 0px;
+	}
+
+	.card-three {
+		align-self: flex-end;
+		justify-self: center;
+		margin: 0px 10px 10px 0px;
+	}
+}

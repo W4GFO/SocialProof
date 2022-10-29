@@ -1,0 +1,57 @@
+@import '../../AllComponentStyles.scss';
+
+.star-ratings-container {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
+
+	margin-bottom: 12px;
+	grid-template-areas: 
+		"row1"
+		"row2"
+		"row3";
+}
+
+.rating-container {
+	border-radius: 4px;
+}
+
+.ratings-top {
+	margin-top: 10px;
+}
+
+.ratings-middle {
+	margin-top: 12px;
+}
+
+.ratings-bottom {
+	margin-top: 12px;
+}
+
+@media screen and (min-width:$MediaBreakPoint) {
+	.star-ratings-container {
+		width: 100%;
+		height: 100%;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+	
+		grid-template-areas: 
+			"row1"
+			"row2"
+			"row3";
+
+		align-items: center;
+	}
+
+	.ratings-top {
+		align-self: flex-end;
+	}
+	
+	.ratings-middle {
+		align-self: center;
+	}
+	
+	.ratings-bottom {
+		align-self: flex-start;
+	}
+}
