@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/SocialProof/static/css/main.de561226.css",
+    "main.js": "/SocialProof/static/js/main.0b86beae.js",
+    "static/js/787.deaa0e61.chunk.js": "/SocialProof/static/js/787.deaa0e61.chunk.js",
+    "index.html": "/SocialProof/index.html",
+    "static/media/bg-pattern-bottom-desktop.svg": "/SocialProof/static/media/bg-pattern-bottom-desktop.32aa6571dc718836bdfc.svg",
+    "main.de561226.css.map": "/SocialProof/static/css/main.de561226.css.map",
+    "main.0b86beae.js.map": "/SocialProof/static/js/main.0b86beae.js.map",
+    "787.deaa0e61.chunk.js.map": "/SocialProof/static/js/787.deaa0e61.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de561226.css",
+    "static/js/main.0b86beae.js"
+  ]
+}
